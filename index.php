@@ -18,10 +18,10 @@ $connection = new MySQLi(HOSTNAME, MYSQLUSER, MYSQLPASS, MYSQLDB); $connection->
          <?php 
 		 $data = $connection->query("SELECT * FROM jokes"); 
 		 while($result = $data->fetch_assoc()){
-		    echo '<div class="joke">';
+			echo '<div class="joke">';
 			//insert image on page
 			if($result['img']){
-				echo '<img class="img" src="' . $result['img'] . '" alt="' . $result['title'] . '" width="200px">';
+				echo '<img class="img" src="' . $result['img'] . '" alt="' .  '" width="200px">';
 			} else {
 			echo 'no image'; 
 			}
