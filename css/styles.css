@@ -19,6 +19,7 @@ header {
 .joke {
 	border: solid 5px #c9c9c9;
 	transition: border 0.3s;
+	height: 300px;
 	margin-top: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -28,8 +29,9 @@ header {
 	box-shadow: 10px 10px 5px 0px rgba(235,228,235,1);
 	background-color: white;
 }
-.joke img {
+.img {
 	float: left;
 	margin-right: 20px;
+	padding: 20px;
 }
 
