@@ -1,5 +1,5 @@
 <?php require_once("db_const.php");  
-$connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME); $connection->set_charset("utf8");  ?> 
+$connection = new MySQLi(HOSTNAME, MYSQLUSER, MYSQLPASS, MYSQLDB); $connection->set_charset("utf8");  ?> 
 <!doctype html> <html> <head> <meta charset="utf-8"> 
 <title>Chuck Norris Facts</title> 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
