@@ -16,17 +16,19 @@ $connection = new MySQLi(HOSTNAME, MYSQLUSER, MYSQLPASS, MYSQLDB); $connection->
 		 ?>
          </header>
          <?php 
-		 $data = $connection->query("SELECT * FROM post"); 
+		 $data = $connection->query("SELECT * FROM jokes"); 
 		 while($result = $data->fetch_assoc()){
-		    echo '<article>';
+		    echo '<div class="joke">';
 			//insert image on page
 			if($result['img']){
 				echo '<img class="img" src="' . $result['img'] . '" alt="' . $result['title'] . '" width="200px">';
 			} else {
 			echo 'no image'; 
 			}
-			echo '<p>' . $result['joke']
-		 echo'</article>'
+			echo '<h2>' . $result['joke'] . '</h2>';
+		 echo'</div class="joke">';
+		 }
+		 
 		 ?>  
 </body> </html>
 
